@@ -156,22 +156,22 @@
 
 @font-face {
     font-family: ModernaSans-Light;
-    src: url(/font/ModernaSans-Light.ttf);
+    src: url(https://dragvesti.xiiber.com/font/ModernaSans-Light.ttf);
 }
 
 @font-face {
     font-family: ModernaSans-Medium;
-    src: url(/font/ModernaSans-Medium.ttf);
+    src: url(https://dragvesti.xiiber.com/font/ModernaSans-Medium.ttf);
 }
 
 @font-face {
     font-family: ModernaSans-BlackIt;
-    src: url(/font/ModernaSans-BlackIt.ttf);
+    src: url(https://dragvesti.xiiber.com/font/ModernaSans-BlackIt.ttf);
 }
 
 @font-face {
     font-family: ModernaSans-Bold;
-    src: url(/font/ModernaSans-Bold.ttf);
+    src: url(https://dragvesti.xiiber.com/font/ModernaSans-Bold.ttf);
 }
 
 #myMove {
