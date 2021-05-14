@@ -19,6 +19,15 @@
     }
 }
 
+* dragvestip {
+    margin-top: 10%;
+    line-height: 20px;
+    font-size: 20pt;
+    text-align: center;
+    font-family: ModernaSans-Light;
+    color: white;
+    }
+
 * dragvestilight {
     margin-top: 0%;
     line-height: 20px;
