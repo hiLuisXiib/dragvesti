@@ -32,7 +32,7 @@
             "icons": [{ "src": "/images/cuu.png", "sizes": "192x192" }]
         }
     ],
-    "description": "Dragvesti, La carrera Drag Queen Online y En Vivo: CDMX y Chihuahua #DragQueen",
+    "description": "Dragvesti, La carrera Drag Queen Online y En Vivo: CDMX y Chihuahua #DragQueen ",
     "screenshots": [{
             "src": "/images/screenshot1.png",
             "type": "image/png",
@@ -43,5 +43,11 @@
             "type": "image/jpg",
             "sizes": "540x720"
         }
-    ]
-}
+    ],
+    "icons": [{
+            "src": "path/to/maskable_icon.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    }
