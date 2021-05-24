@@ -69,9 +69,9 @@
     <meta http-equiv="Content-Language" content="es-mx">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-
+    <link rel="preconnect " href="https://fonts.gstatic.com ">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap " rel="stylesheet ">
-    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css ">
+
 
 
 
@@ -583,6 +583,19 @@
         .navigation li a.active {
             background-color: #b10000;
         }
+        
+        .navigation p a {
+            background-color: #fff;
+            font-size: 15px;
+            height: 100%;
+            width: 100%;
+            display: block;
+            transition: 0.2s ease;
+        }
+        
+        .navigation p a.active {
+            background-color: #b10000;
+        }
     </style>
 
 
@@ -606,7 +619,7 @@
                             <div class="promo-text ">
                                 <span class="dash "></span>
                                 <div class="headline ">Dragvesti</div>
-                                <p style="font-size:larger; ">Online y En Vivo: Chihuahua y CDMX</p>
+                                <p ><strong>Online y En Vivo: Chihuahua y CDMX</strong> </p>
                                 <div class="buttons ">
                                     <a class="button " href="online/index.html ">Dragvesti Online</a>
                                     <a class="button " href="envivo/chihuahua/index.html ">En Vivo: Chihuahua </a>
@@ -924,214 +937,11 @@
     </div>
     </div>
 
-    <div class="navigation ">
-        <div id="menu "> </div>
-
-        <ul>
-
-            <li>
-                <a href="#section1 " data-drag-name="Dragvesti Drag Queen - Online y En vivo: CDMX-Chihuahua ">
-                    <div style="display: none; ">Dragvesti: Online y En Vivo </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section2 " data-drag-name="Dragvesti 1ra-temporada ">
-                    <div style="display: none; ">Dragvesti 1ra-temporada</div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section3 " data-drag-name="Dragvesti 2da-temporada ">
-                    <div style="display: none; ">Dragvesti 2da-temporada</div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section4 " data-drag-name="Dragvesti 3ra-temporada ">
-                    <div style="display: none; ">Dragvesti 3ra-temporada</div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section5 " data-drag-name="Dragvesti All Stars 1 ">
-                    <div style="display: none; ">Dragvesti All Stars 1 </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section6 " data-drag-name="Dragvesti All Stars 2 ">
-                    <div style="display: none; ">Dragvesti All Stars 2 </div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section7 " data-drag-name="Dragvesti En vivo: Chihuahua 1ra-temporada ">
-                    <div style="display: none; ">Dragvesti En vivo: Chihuahua 1ra-temporada</div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section8 " data-drag-name="Dragvesti En vivo: Chihuahua 2da-temporada ">
-                    <div style="display: none; ">Dragvesti En vivo: Chihuahua 2da-temporada</div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section9 " data-drag-name="Dragvesti En vivo: Chihuahua 3ra-temporada ">
-                    <div style="display: none; ">Dragvesti En vivo: Chihuahua 3ra-temporada</div>
-                </a>
-            </li>
-
-            <!-- <li>
-                <a href="#section10 " data-drag-name="10 "><div style="display: none; "></a>
-            </li> -->
-
-            <li>
-                <a href="#section11 " data-drag-name="Dragvesti En vivo: Chihuahua All Stars ">
-                    <div style="display: none; ">Dragvesti En vivo: Chihuahua All Stars</div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section12 " data-drag-name="Guerra de lipsync y Guerra de shows Chihuahua ">
-                    <div style="display: none; ">Guerra de lipsync y Guerra de shows Chihuahua
-                        <div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section13 " data-drag-name="Dragvesti En vivo CDMX ">
-                    <div style="display: none; "></div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section14 " data-drag-name="#LongLiveTheQueens CDMX ">
-                    <div style="display: none; ">#LongLiveTheQueens CDMX</div>
-                </a>
-            </li>
-
-            <li>
-                <a href="#section15 " data-drag-name="#CucuConfessions Cynthia Lee Fontaine en CDMX ">
-                    <div style="display: none; ">#CucuConfessions Cynthia Lee Fontaine en CDMX</div>
-                </a>
-            </li>
+   
 
 
-        </ul>
-        </div>
+      <!-- partial -->
 
-
-        <!-- partial -->
-        <script>
-            function openNav() {
-                document.getElementById("myNav ").style.width = "100% ";
-            }
-
-            function closeNav() {
-                document.getElementById("myNav ").style.width = "0% ";
-            }
-            const ele = '.promotion-carousel';
-            const $window = $(window);
-            const viewportHeight = $window.height();
-
-            let ui = {
-                promo: ele + ' .promotion',
-                promoText: ele + ' .promo-text',
-                navigationItems: '.navigation a'
-            };
-
-
-            function isOnScreen(el) {
-                const viewport = {
-                    top: $window.scrollTop()
-                };
-
-
-                viewport.bottom = viewport.top + viewportHeight;
-
-                const bounds = el.offset();
-                bounds.bottom = el.offset().top + el.outerHeight();
-
-                return !(viewport.bottom < bounds.top || viewport.top > bounds.bottom);
-            }
-
-            class ScrollEvents {
-
-                run() {
-                    const $promo = $('.promotion');
-                    const $promoText = $('.promo-text');
-
-                    function smoothScroll(target) {
-                        $('body, html').animate({
-                            'scrollTop': target.offset().top
-                        }, 600);
-                    }
-
-                    $(ui.navigationItems).on('click', e => {
-                        e.preventDefault();
-                        smoothScroll($(e.currentTarget.hash));
-                    });
-
-                    $window.on('scroll', () => {
-
-                        $(ui.promo).toArray().forEach(el => {
-                            const $el = $(el);
-                            if (isOnScreen($el)) {
-                                this.scrolly($el);
-                            }
-                        });
-                        this.updateNavigation();
-                        this.fadeAtTop($(ui.promoText));
-                    });
-
-                    this.updateNavigation();
-                }
-
-                scrolly(el) {
-                    const topOffset = el.offset().top;
-                    const height = el.height();
-                    let scrollTop = $window.scrollTop();
-                    const maxPixels = height / 4;
-                    const percentageScrolled = (scrollTop - topOffset) / height;
-                    let backgroundOffset = maxPixels * percentageScrolled;
-
-                    backgroundOffset = Math.round(Math.min(maxPixels, Math.max(0, backgroundOffset)));
-
-                    el.css(`background-position`, `right 0px top ${backgroundOffset}px`);
-                }
-
-                fadeAtTop(el) {
-                    const startPos = 0.25;
-
-                    el.toArray().forEach(el => {
-                        const $el = $(el);
-                        let position = $el.offset().top - $window.scrollTop() + viewportHeight / 6;
-                        let opacity = position < viewportHeight * startPos ? position / (viewportHeight * startPos) * 1 : 1;
-
-                        $el.css('opacity', opacity);
-                    });
-                }
-
-                updateNavigation() {
-                    $(ui.promo).toArray().forEach(el => {
-                        let $el = $(el);
-                        let activeSection = $(`.navigation a[href="#${$el.attr( 'id')} "]`).data('drag-name') - 1;
-
-                        if ($el.offset().top - $window.height() / 2 < $window.scrollTop() && $el.offset().top + $el.height() - $window.height() / 2 > $window.scrollTop()) {
-                            $(ui.navigationItems).eq(activeSection).addClass('active');
-                        } else {
-                            $(ui.navigationItems).eq(activeSection).removeClass('active');
-                        }
-                    });
-                }
-            };
-
-            const scrollEvents = new ScrollEvents();
-
-            scrollEvents.run();
-        </script>
 
 
 </body>
