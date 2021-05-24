@@ -2,17 +2,17 @@
     "short_name": "Dragvesti",
     "name": "Dragvesti La Carrera Drag Queen Oline y en Vivo CDMX y Chihuahua",
     "icons": [{
-            "src": "/images/icons-192.png",
+            "src": "https://dragvesti.xiiber.com/images/icons-192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/images/icons-512.png",
+            "src": "https://dragvesti.xiiber.com/images/icons-512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
     ],
-    "start_url": "https://dragvesti.xiiber.com/?source=pwa",
+    "start_url": "https://dragvesti.xiiber.com/index.html?source=pwa",
     "background_color": "#cc0000",
     "display": "standalone",
     "scope": "/",
@@ -21,31 +21,31 @@
             "name": "1ra temporada",
             "short_name": "1ratemporada",
             "description": "Ganadora Iris XC Queen de México y Runner up Yuni K Feem de Argentina.",
-            "url": "/1ratemporada?source=pwa",
+            "url": "https://dragvesti.xiiber.com/1ratemporada?source=pwa",
             "icons": [{ "src": "/images/1ratemporada.png", "sizes": "192x192" }]
         },
         {
             "name": "En Vivo: Chihuahua",
             "short_name": "CUU",
             "description": "Dragvesti En Vivo: Chihuahua. 3 temporadas, 1 All Stars",
-            "url": "/cuu?source=pwa",
-            "icons": [{ "src": "/images/cuu.png", "sizes": "192x192" }]
+            "url": "https://dragvesti.xiiber.com/cuu?source=pwa",
+            "icons": [{ "src": "https://dragvesti.xiiber.com/images/cuu.png", "sizes": "192x192" }]
         }
     ],
     "description": "Dragvesti, La carrera Drag Queen Online y En Vivo: CDMX y Chihuahua #DragQueen ",
     "screenshots": [{
-            "src": "/images/screenshot1.png",
+            "src": "https://dragvesti.xiiber.com/images/screenshot1.png",
             "type": "image/png",
             "sizes": "540x720"
         },
         {
-            "src": "/images/screenshot2.jpg",
+            "src": "https://dragvesti.xiiber.com/images/screenshot2.jpg",
             "type": "image/jpg",
             "sizes": "540x720"
         }
     ],
     "icons": [{
-            "src": /maskable_icon.png",
+            "src": "https://dragvesti.xiiber.com/maskable_icon.png",
             "sizes": "114x114",
             "type": "image/png",
             "purpose": "any maskable"
