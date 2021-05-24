@@ -12,7 +12,7 @@
             "sizes": "512x512"
         }
     ],
-    "start_url": "/?source=pwa",
+    "start_url": "https://dragvesti.xiiber.com/?source=pwa",
     "background_color": "#cc0000",
     "display": "standalone",
     "scope": "/",
@@ -45,8 +45,8 @@
         }
     ],
     "icons": [{
-            "src": "path/to/maskable_icon.png",
-            "sizes": "196x196",
+            "src": /maskable_icon.png",
+            "sizes": "114x114",
             "type": "image/png",
             "purpose": "any maskable"
         }
