@@ -11,28 +11,10 @@
 -->
 
 <!DOCTYPE html>
-<html lang="es-MX" lighthouse http://dragvesti.xiiber.com --budget-path=budget.json Cache-Control "max-age=2592000, public">
+<html lang="es-MX" lighthouse https://dragvesti.xiiber.com --budget-path=budget.json Cache-Control "max-age=2592000, public" lighthouse --help>
 
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PQFFMLG');
-    </script>
-    <!-- End Google Tag Manager -->
 
     <!-- Pntst -->
     <meta name="p:domain_verify " content="1ccb70a44d7509dd6e6cad4538b2b9e2 " />
@@ -82,34 +64,75 @@
     <link rel="apple-touch-startup-image" href="sgv/apple//launch.png">
     <meta name="apple-mobile-web-app-title" content="Xiiber">
     <meta name="theme-color" content="#cc0000" />
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="app/manifest.json">
 
+    <!-- generics -->
+    <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="/path/to/favicon-57.png" sizes="57x57">
+    <link rel="icon" href="/path/to/favicon-76.png" sizes="76x76">
+    <link rel="icon" href="/path/to/favicon-96.png" sizes="96x96">
+    <link rel="icon" href="/path/to/favicon-128.png" sizes="128x128">
+    <link rel="icon" href="/path/to/favicon-192.png" sizes="192x192">
+    <link rel="icon" href="/path/to/favicon-228.png" sizes="228x228">
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href=“/path/to/favicon-196.png ">
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon " href="/path/to/favicon-120.png " sizes="120x120 ">
+    <link rel="apple-touch-icon " href="path/to/favicon-152.png " sizes="152x152 ">
+    <link rel="apple-touch-icon " href="path/to/favicon-180.png " sizes="180x180 ">
+
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor " content="#FFFFFF ">
+    <meta name="msapplication-TileImage " content="/path/to/favicon-144.png ">
+    
+    <!— Windows 8.1 + IE11 and above —>
+    <meta name="msapplication-config " content="/path/to/browserconfig.xml " />
+
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color " content="#2E3AA1 ">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable " content="yes ">
+    <meta name="application-name " content="Web ">
+    <link rel="icon " sizes="192x192 " href="images/touch/icon-192x192.png ">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable " content="yes ">
+    <meta name="apple-mobile-web-app-status-bar-style " content="black ">
+    <meta name="apple-mobile-web-app-title " content="Blog ">
+    <link rel="apple-touch-icon " href="images/touch/icon-192x192.png ">
+
+    <!-- Tile for Win8 -->
+    <meta name="msapplication-TileColor " content="#3372DF ">
+    <meta name="msapplication-TileImage " content="images/touch/icon-192x192.png ">
 
     <!-- HiHello.monster! Tag Manager -->
-    <meta name="author" content="Luis Angel Maciel, Dragvesti">
+    <meta name="author " content="Luis Angel Maciel, Dragvesti ">
     <meta name="keywords " content="Dragvesti La Carrera Drag Queen, Dragvesti La Carrera Drag Queen Online, Dragvesti La Carrera Drag Queen En Vivo, Dragvesti La Carrera Drag Queen All Stars ">
-    <meta name="description " content="Competencia Drag Queen en Versión Online con 3 temporadas regulares y 2 all stars. La edición Dragvesti En Vivo tiene sede en CDMX con una temporada y Chihuahua con 3 temporadas regulares y 1 all stars">
-    <meta name="rights" content="Dragvesti" />
-    <meta name="generator" content="HiHello.monster! - Content Management" />
+    <meta name="description " content="Competencia Drag Queen en Versión Online con 3 temporadas regulares y 2 all stars. La edición Dragvesti En Vivo tiene sede en CDMX con una temporada y Chihuahua con 3 temporadas regulares y 1 all stars ">
+    <meta name="rights " content="Dragvesti " />
+    <meta name="generator " content="HiHello.monster! - Content Management " />
 
     <meta name="robots " content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1 ">
-    <meta name="googlebot" content="index, follow">
-    <meta name="googlebot-video" content="index" />
-    <meta name="googlebot-image" content="index" />
-    <meta name="googlebot-news" content="index, follow">
-    <meta name="description" content>
+    <meta name="googlebot " content="index, follow ">
+    <meta name="googlebot-video " content="index " />
+    <meta name="googlebot-image " content="index " />
+    <meta name="googlebot-news " content="index, follow ">
+    <meta name="description " content>
 
     <meta property="og:locale " content="es_MX ">
-    <meta property="og:type " content="website">
-    <meta property="og:title " content="Dragvesti, La Carrera Drag Queen">
+    <meta property="og:type " content="website ">
+    <meta property="og:title " content="Dragvesti, La Carrera Drag Queen ">
     <meta property='og:description' content='Online: 3 ediciones regulares y 2 all stars + 5 ediciones en vivo, 4 regulares y 1 all stars '>
     <meta property="og:url " content="http://dragvesti.xiiber.com ">
-    <meta property="og:site_name " content="Dragvesti">
+    <meta property="og:site_name " content="Dragvesti ">
     <meta property="og:image " content="htps:/dragvesti.xiiber.com/dragvesti-portada.webp " />
     <meta property="og:image:secure_url " content="htps:/dragvesti.xiiber.com/dragvesti-portada-drag.webp " />
     <meta property="og:image:width " content="1080 " />
     <meta property="og:image:height " content="400 " />
-    <meta property="og:image:alt" content="Arte drag queen en México">
+    <meta property="og:image:alt " content="Arte drag queen en México ">
 
     <meta property=" og:video " content="http://dragvesti.xiiber.com/dragvesti-allstars.swf " />
     <meta property="og:video:secure_url " content="http://dragvesti.xiiber.com/dragvesti.swf " />
@@ -144,7 +167,7 @@
     <link rel="canonical " href="https://dragvesti.xiiber.com " />
     <link rel="icon " href="https://dragvesti.xiiber.com/ico/ico.png " sizes="192x192 " id="favicon " type="image/x-icon " />
     <link rel="icon " href="maskable_icon.png " sizes="114x114 " type="image/png " purpose="any maskable ">
-    
+
 
 
 
@@ -601,10 +624,6 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQFFMLG "
-    height="0 " width="0 " style="display:none;visibility:hidden "></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- partial:index.partial.html -->
     <div class="promotion-carousel ">
@@ -617,7 +636,7 @@
                             <div class="promo-text ">
                                 <span class="dash "></span>
                                 <div class="headline ">Dragvesti</div>
-                                <p ><strong>Online y En Vivo: Chihuahua y CDMX</strong> </p>
+                                <p><strong>Online y En Vivo: Chihuahua y CDMX</strong> </p>
                                 <div class="buttons ">
                                     <a class="button " href="online/index.html ">Dragvesti Online</a><br>
                                     <a class="button " href="envivo/chihuahua/index.html ">En Vivo: Chihuahua </a><br>
@@ -707,7 +726,7 @@
                         </script>
                         <div class="buttons ">
                             <a class="button sho-play-link " href="online/2da-temporada/e1.html "></span>Ver primer episodio</a><br>
-                          <!--   <a class="button see-all " href="online/2da-temporada/index.html ">Mostrar episodios</a><br> -->
+                            <!--   <a class="button see-all " href="online/2da-temporada/index.html ">Mostrar episodios</a><br> -->
                             <a class="button info-button " href="wikidrag/2da-temporada.html ">Wikidrag</a><br>
                         </div>
                     </div>
@@ -724,7 +743,7 @@
                         <p class="body long ">Jurado: Lennox Gyarada, Gvajardo, Memo Reyri, Elizabeth San Martin.<br> Participantes: Mikonika Q Love, Peony Von Villant, Macarena, Sky O´Farrel. </p>
                         <div class="buttons ">
                             <a class="button sho-play-link " href="online/3ra-temporada/e1.html "></span>Ver primer episodio</a><br>
-                            <!-- <a class="button see-all " href="online/3ra-temporada/index.html ">Mostrar episodios</a><br>-->                            
+                            <!-- <a class="button see-all " href="online/3ra-temporada/index.html ">Mostrar episodios</a><br>-->
                             <a class="button info-button " href="wikidrag/3ra-temporada.html ">Wiki</a><br>
                         </div>
                     </div>
@@ -741,7 +760,7 @@
                         <p class="body long "> Jurado: Nicole Peige Brooks, Alexis Mateo, Roberto Cabral, Sofia Camará.<br> Participantes: Becky D´Vich, Yuni K Feem, Agatha Toro, Dalila Velvet.</p>
                         <div class="buttons ">
                             <a class="button sho-play-link " href="online/allstars1/e1.html "></span>Ver primer episodio</a><br>
-                            <!-- <a class="button see-all " href="online/allstars1/index.html ">Mostrar episodios</a><br> -->      
+                            <!-- <a class="button see-all " href="online/allstars1/index.html ">Mostrar episodios</a><br> -->
                             <a class="button info-button " href="wikidrag/allstars1.html ">Wikidrag</a><br>
                         </div>
                     </div>
@@ -935,10 +954,10 @@
     </div>
     </div>
 
-   
 
 
-      <!-- partial -->
+
+    <!-- partial -->
 
 
 
