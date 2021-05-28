@@ -49,6 +49,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="preconnect " href="https://fonts.gstatic.com ">
     <link rel="preload " as="font ">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap " rel="stylesheet ">
@@ -111,7 +112,7 @@
     <!-- HiHello.monster! Tag Manager -->
     <meta name="author " content="Luis Angel Maciel, Dragvesti ">
     <meta name="keywords " content="Dragvesti La Carrera Drag Queen, Dragvesti La Carrera Drag Queen Online, Dragvesti La Carrera Drag Queen En Vivo, Dragvesti La Carrera Drag Queen All Stars ">
-    <meta name="description " content="Competencia Drag Queen en Versión Online con 3 temporadas regulares y 2 all stars. La edición Dragvesti En Vivo tiene sede en CDMX con una temporada y Chihuahua con 3 temporadas regulares y 1 all stars ">
+    <meta name="description " content="Competencia Drag Queen en Versión Online con 3 temporadas regulares y 2 all stars. La edición Dragvesti En Vivo tiene sede en CDMX con una temporada y en CUU. ">
     <meta name="rights " content="Dragvesti " />
     <meta name="generator " content="HiHello.monster! - Content Management " />
 
@@ -120,12 +121,12 @@
     <meta name="googlebot-video " content="index " />
     <meta name="googlebot-image " content="index " />
     <meta name="googlebot-news " content="index, follow ">
-    <meta name="description " content>
+
 
     <meta property="og:locale " content="es_MX ">
     <meta property="og:type " content="website ">
     <meta property="og:title " content="Dragvesti, La Carrera Drag Queen ">
-    <meta property='og:description' content='Online: 3 ediciones regulares y 2 all stars + 5 ediciones en vivo, 4 regulares y 1 all stars '>
+    <meta property='og:description' content='Competencia Drag Queen en Versión Online con 3 temporadas regulares y 2 all stars. La edición Dragvesti En Vivo tiene sede en CDMX con una temporada y en CUU.'>
     <meta property="og:url " content="http://dragvesti.xiiber.com ">
     <meta property="og:site_name " content="Dragvesti ">
     <meta property="og:image " content="htps:/dragvesti.xiiber.com/dragvesti-portada.webp " />
@@ -181,6 +182,10 @@
             font-family: 'Roboto', serif;
             -webkit-font-smoothing: antialiased;
             -webkit-text-size-adjust: 100%;
+        }
+        
+        img {
+            width: 100%;
         }
         
         .overlay {
@@ -291,57 +296,6 @@
                 border-radius: 0;
                 box-shadow: none;
             }
-        }
-        
-        .modal-fullscreen {
-            padding: 0 !important;
-        }
-        
-        .modal-fullscreen .modal-dialog {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .modal-fullscreen .modal-content {
-            height: auto;
-            min-height: 100%;
-            border: 0 none;
-            border-radius: 0;
-            box-shadow: none;
-        }
-        
-        .btn-open-modal {
-            margin-bottom: 0.5em;
-        }
-        
-        .icon-bar {
-            width: 100%;
-            background-color: #ffffff;
-            overflow: auto position: fixed;
-            font-size: 20pt;
-        }
-        
-        .icon-bar a {
-            float: left;
-            width: 20%;
-            text-align: center;
-            padding: 6px 0;
-            transition: all 0.3s ease;
-            color: #bfbfbf;
-            background-color: #ffffff;
-        }
-        
-        .footerx {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: white;
-            color: white;
-            text-align: center;
-            font-size: 20pt;
         }
         
         @font-face {
@@ -624,8 +578,15 @@
 </head>
 
 <body>
-
-    <!-- partial:index.partial.html -->
+    <header style="visibility:hidden; display: none;">
+        <a class="skip-link" href="#maincontent">
+            <img src="fotos/dragvesti.webp" alt="HTML5 Icon" style="width:299px;height:191px; float: right;">
+        </a>
+        <h1>
+            <span>Dragvesti La carrera Drag Online y En Vivo: Chihuahua y CDMX </span>
+        </h1>
+    </header>
+    <!-- ⊙⩌⨀ -->
     <div class="promotion-carousel ">
         <div class="promotions ">
             <article>
@@ -637,20 +598,30 @@
                                 <span class="dash "></span>
                                 <div class="headline ">Dragvesti</div>
                                 <p><strong>Online y En Vivo: Chihuahua y CDMX</strong> </p>
-                                <div class="buttons ">
-                                    <a class="button " href="online/index.html ">Dragvesti Online</a><br>
+                                <div class="buttons " disabled>
+                                    <a class="button ">Dragvesti Online  </a><br>
+                                    <a class="button ">En Vivo: Chihuahua </a><br>
+                                    <a class="button ">En Vivo: CDMX</a><br>
+                                    <a class="button ">#LongLiveTheQueens</a><br>
+                                    <a class="button ">#CucuConfessions</a>
+                                </div>
+                                <!-- 
+                                <div class="buttons " disabled>
+                                    <a class="button " href="online/index.html ">Dragvesti Online  </a><br>
                                     <a class="button " href="envivo/chihuahua/index.html ">En Vivo: Chihuahua </a><br>
                                     <a class="button " href="envivo/cdmx/1ra-temporada/index.html ">En Vivo: CDMX</a><br>
                                     <a class="button " href="eventos/LongLiveTheQueens/index.html ">#LongLiveTheQueens</a><br>
-                                    <a class="button " href="eventos/Cucuconfessions/index.html ">#CucuConfessions</a>
+                                    <a class="button " href="eventos/Cucuconfessions/index.html " type="button" disabled>#CucuConfessions</a>
                                 </div>
+                                -->
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
+        </div>
 
-
+        <main id="maincontent">
             <div class="promotion " id="section2 " style="background-image: url(https://dragvesti.xiiber.com/fotos/ganadora_dragvesti_irisxcqueen.webp) " async>
                 <div class="shade "></div>
                 <div class="promo-detail cycle-overlay ">
@@ -659,7 +630,10 @@
                         <span class="promo-flag ">Dragvesti</span>
                         <div class="headline ">Primera Temporada</div>
                         <p style="font-size:larger; ">Edición Internacional</p><br>
+
                         <p class="body long "> Jurado: Latrice Royale, Bárbara Durango, Yume Hime, Luz Violeta, Paris Bang Bang.<br> Participantes: Iris XC Queen, Yuni K Feem, Sophia Nari, Dalila Velvet, Niiha Villant.</p>
+
+
                         <script type="application/ld+json ">
                             {
                                 "@context ": "https://schema.org/ ",
@@ -689,7 +663,13 @@
                                 }
                             }
                         </script>
-                        <div class="buttons ">
+
+                        <div class="buttons " disabled>
+                            <a class="button sho-play-link "></span>Ver primer episodio</a><br>
+                            <!-- <a class="button see-all " href="online/1ra-temporada/index.html ">Mostrar episodios</a><br> -->
+                            <a class="button info-button ">Wikidrag</a><br>
+                        </div>
+                        <div class="buttons " style="visibility:hidden; display: none;">
                             <a class="button sho-play-link " href="online/1ra-temporada/E1a.html "></span>Ver primer episodio</a><br>
                             <!-- <a class="button see-all " href="online/1ra-temporada/index.html ">Mostrar episodios</a><br> -->
                             <a class="button info-button " href="wikidrag/1ra-temporada.html ">Wikidrag</a><br>
@@ -950,22 +930,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
-    </div>
 
-
-
-
-    <!-- partial -->
-
-
+    <script src="image-list.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
 </html>
-<!-- 
-    Diseñado por www.twitter.com/luisangelmaciel 
-    Potenciado por www.HiHello.monster
-    Para www.facebook.com/Dragvesti
--->
